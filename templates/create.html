@@ -1,0 +1,99 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Build the Bridge {% endblock %}</h1>
+    <form method="post">
+
+        <label for="response_1">Am I putting thought into action?</label>
+        <br>
+        <textarea name="response_1"
+                  placeholder="response_1"
+                  rows="5"
+                  cols="60"
+                  >{{ request.form['response_1'] }}</textarea>
+        <br>
+        
+        <label for="response_2">Am I setting new and intersting goals?</label>
+        <br>
+        <textarea name="response_2"
+                  placeholder="response_2"
+                  rows="5"
+                  cols="60"
+                  >{{ request.form['response_2'] }}</textarea>
+        <br>
+
+        <label for="response_3">Am I visualizing my goals?</label>
+        <br>
+        <textarea name="response_3"
+                  placeholder="response_3"
+                  rows="5"
+                  cols="60"
+                  >{{ request.form['response_3'] }}</textarea>
+        <br>
+
+        <label for="response_4">Am I stretching my comfort zone?</label>
+        <br>
+        <textarea name="response_4"
+                  placeholder="response_4"
+                  rows="5"
+                  cols="60"
+                  >{{ request.form['response_4'] }}</textarea>
+        <br>
+
+        <label for="response_5">Am I happy with what I have?</label>
+        <br>
+        <textarea name="response_5"
+                  placeholder="response_5"
+                  rows="5"
+                  cols="60"
+                  >{{ request.form['response_4'] }}</textarea>
+        <br>
+
+        <label for="response_6">Am I filling my mind with positive self talk?</label>
+        <br>
+        <textarea name="response_6"
+                  placeholder="response_6"
+                  rows="5"
+                  cols="60"
+                  >{{ request.form['response_6'] }}</textarea>
+        <br>
+
+        <label for="response_7">Am I being a positive force for others?</label>
+        <br>
+        <textarea name="response_7"
+                  placeholder="response_7"
+                  rows="5"
+                  cols="60"
+                  >{{ request.form['response_7'] }}</textarea>
+        <br>
+
+        <label for="response_8">Are my actions the same as my values?</label>
+        <br>
+        <textarea name="response_8"
+                  placeholder="response_8"
+                  rows="5"
+                  cols="60"
+                  >{{ request.form['response_8'] }}</textarea>
+        <br>
+
+        <label for="response_9">Am I staying in balance?</label>
+        <br>
+        <textarea name="response_9"
+                  placeholder="response_9"
+                  rows="5"
+                  cols="60"
+                  >{{ request.form['response_9'] }}</textarea>
+        <br>
+
+        <label for="response_10">Am I focused and persistent?</label>
+        <br>
+        <textarea name="response_10"
+                  placeholder="response_10"
+                  rows="5"
+                  cols="60"
+                  >{{ request.form['response_10'] }}</textarea>
+        <br>
+        
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
